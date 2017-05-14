@@ -1,10 +1,12 @@
 
 html {
   height: 100%;
+  width: 100%;
 }
 
 
 body {
+	width: auto;
   	margin: 0 auto;
   	padding: 0;
 	background-image: url("../images/texturetastic_gray.png");
@@ -37,6 +39,7 @@ p, li {
 	line-height: 1.5;
 	font-size: 16px;
 	color: #777777;
+	margin-top: 10px;
 	}
 
 
@@ -59,9 +62,13 @@ p, li {
 	padding: 0;
 	}
 
-.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
-	background-color: #ffffff;
+.content {
 	width: 960px;
+	}
+
+
+#topHeader{   /*sets the container width for #name so that it is inline with .content below */
+	background-color: #ffffff;
 	overflow: auto;
 	margin: 0 auto;
 
@@ -70,7 +77,7 @@ p, li {
 /*Navigation area styling*/
 nav {
 	float: right;
-	margin-top: 20px;
+	margin-top: 15px;
 	display: block;
 	vertical-align: baseline;
 	}
@@ -82,7 +89,7 @@ ul {
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
+    -webkit-padding-start: 0px;
 	}
 
 li {
@@ -102,15 +109,14 @@ li a {
 	}
 
 /*PAGE CONTENT*/
-.content {
+#main-content {
 	clear: both;
-	width: 960px;
 	margin: 30px auto 130px; /*added large bottom marging to help with "sticky" footer not overlapping on long page content*/
 	overflow: auto;
 	min-height: 100%;
 	}
 
-.content h1 {
+#main-content h1 {
 	color: #4aaaa5;
 	padding-bottom: 20px;
 	border-bottom: 3px solid #cccccc;
@@ -257,11 +263,11 @@ aside h2 {
 footer {
   	width: 100%;
   	background-color: #666666;
-  	height: 93px;
+  	height: 95px;
   	position: fixed;
   	bottom: 0;
   	margin-top: 20px;
-  	border-top: 7px solid #4aaaa5;
+  	border-top: 5px solid #4aaaa5;
   	text-align: center;
   	z-index: 1;
 	}
@@ -271,3 +277,374 @@ footer {
   	font-size: 12px;
   	padding: 20px;
 	}
+
+
+/*////////////////////*RESPONSIVE DESIGN ELEMENTS//////////////////////////// */
+
+@media screen and (max-width: 640px) {
+
+/*HEADING AREA*/
+/* I needed to place the styling for #head before .topWrapper, because the class topWrapper was overwriting the #name's styling! */
+		body {
+			width: auto;
+			}
+
+		#name {   /*This is the where my name is at the top of each page*/
+			padding: 15px;
+			width: inherit;
+			float: none;
+			}
+
+		.topWrapper {
+			overflow: auto;
+			margin: 0 auto;
+			padding: 0;
+			}
+
+		.content {
+			width: 100%;
+		}
+
+		#topHeader{   /*sets the container width for #name so that it is inline with .content below */
+			overflow: auto;
+			margin: 0 auto;
+			width: auto;
+			}
+
+		/*Navigation area styling*/
+		nav {
+			float: none;
+			width: 100%;
+			margin: 10px auto;
+			}
+
+		ul {
+		    margin: 0;
+		    display: flex;
+		    justify-content: space-around;
+		    padding: 0 10px;
+		    }
+
+		li {
+		    display: inline;
+		    list-style: none;
+		    padding: 0;
+		    }
+
+		/*PAGE CONTENT*/
+
+		#main-content {
+			clear: both;
+			margin: 10px auto 60px;
+			overflow: auto;
+			}
+
+		#main-content h1 {
+			margin: 0 0 10px;
+			}
+
+
+		/*MAIN SECTION AREA*/
+
+		/*About Me and image styling*/
+
+		#aboutMe {
+			width: auto;
+			margin: 20px;
+			float: none;
+			}
+
+		.profilePic {
+			float: none;
+			align-items: center;
+			width: 100%;
+			margin: 20px 0 0;
+			}
+
+		/*My Portfolio image and banner styling*/
+
+		#myPortfolio {
+			width: auto;
+			float: none;
+			margin: 20px;
+			}
+
+		.picLeft, .picRight {
+			position: relative;
+			float: left;
+			width: 100%;
+			margin: 20px 0;
+		}
+		
+		#myPortfolio img {
+			width: 100%;
+		}
+		.portfolioBanner {
+			width: inherit;
+			}
+
+
+		/*Contact Me form styling*/
+
+		#contactMe {
+			width: auto;
+			float: none;
+			margin: 20px;
+			}
+
+
+		/* ASIDE SECTION AREA*/
+		aside {
+			float: none;
+			width: auto;
+			margin: 20px;
+			}
+
+		aside h2 {
+			padding: 0px 10px 20px 0;
+			margin: 0 0 20px;
+			}
+
+		.icon {
+			margin: 0 10px 0 0;
+			}
+
+		#iconContainer {
+			text-align: left;
+			}
+
+
+		/*FOOTER AREA*/
+		footer {
+		  	height: 45px;
+		  	text-align: center;
+		  	z-index: 1;
+			}
+
+		#footerText{
+		  	font-size: 12px;
+		  	padding: 5px;
+			}
+
+		}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+		/*HEADING AREA*/
+
+		body {
+			width: auto;
+			}
+
+		#name {   /*This is the where my name is at the top of each page*/
+			padding: 15px;
+			width: auto;
+			float: left;
+			}
+
+		.content {
+			width: 100%;
+		}
+
+		.topWrapper {
+			overflow: auto;
+			margin: 0 auto;
+			padding: 0 20px;
+			width: auto;
+			}
+
+		#topHeader{   /*sets the container width for #name so that it is inline with .content below */
+			overflow: auto;
+			margin: 0 auto;
+			}
+
+		/*PAGE CONTENT*/
+
+		#main-content {
+			clear: both;
+			margin: 10px auto 80px;
+			overflow: auto;
+			}
+
+		#main-content h1 {
+			margin: 0 0 10px;
+			}
+
+		/*MAIN SECTION AREA*/
+
+		/*About Me and image styling*/
+
+		#aboutMe {
+			width: auto;
+			float: none;
+			margin: 20px;
+			}
+
+		/*My Portfolio image and banner styling*/
+
+		#myPortfolio {
+			width: auto;
+			float: none;
+			margin: 20px;
+			}
+
+		.picLeft, .picRight {
+			position: relative;
+			width: 48%;
+			margin: 20px 0;
+		}
+		
+		#myPortfolio img {
+			width: 100%;
+		}
+		.portfolioBanner {
+			width: 100%;
+			}
+
+
+		/*Contact Me form styling*/
+
+		#contactMe {
+			width: auto;
+			float: none;
+			margin:20px;
+			}
+
+
+		/* ASIDE SECTION AREA*/
+		aside {
+			float: none;
+			width: auto;
+			margin: 20px;
+			}
+
+		aside h2 {
+			padding: 0px 10px 20px 0;
+			margin: 0 0 20px;
+			}
+
+		.icon {
+			margin: 0 10px 0 0;
+			}
+
+		#iconContainer {
+			text-align: left;
+			}
+
+
+		/*FOOTER AREA*/
+		footer {
+		  	height: 63px;
+		  	text-align: center;
+		  	z-index: 1;
+			}
+
+		#footerText{
+		  	font-size: 12px;
+		  	padding: 5px;
+			}
+
+		}
+
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+
+		/*HEADING AREA*/
+
+		body {
+			width: auto;
+			}
+
+		#name {   /*This is the where my name is at the top of each page*/
+			padding: 25px;
+			width: auto;
+			float: left;
+			}
+
+		.content {
+			width: 740px;
+		}
+
+		.topWrapper {
+			overflow: auto;
+			margin: 0 auto;
+			padding: 0;
+			width: 100%;
+			}
+
+		#topHeader{   /*sets the container width for #name so that it is inline with .content below */
+			overflow: auto;
+			margin: 0 auto;
+			}
+
+		/*PAGE CONTENT*/
+
+		#main-content {
+			clear:both;
+			margin: 20px auto 120px;
+			overflow: auto;
+			min-height: 100%;
+			}
+
+		.content h1 {
+			margin: 0 0 10px;
+			}
+
+		/*MAIN SECTION AREA*/
+
+		/*About Me and image styling*/
+
+		#aboutMe {
+			width: 400px;
+			}
+
+		.profilePic {
+			float: none;
+			clear:both;
+			align-items: center;
+			width: 100%;
+			margin: 10px auto;
+			}
+	
+		/*My Portfolio image and banner styling*/
+
+		#myPortfolio {
+			width: 400px;
+			}
+
+		.picLeft, .picRight {
+			float: none;
+			width: 100%;
+			margin: 20px 0;
+		}
+		
+		#myPortfolio img {
+			width: 100%;
+		}
+		.portfolioBanner {
+			width: 100%;
+			}
+
+
+		/*Contact Me form styling*/
+
+		#contactMe {
+			width: 400px;
+			}
+
+
+		/* ASIDE SECTION AREA*/
+		aside {
+			float: right;
+			width: auto;
+			margin: 0 auto;
+			}
+
+		aside h2 {
+			padding: 0px 10px 20px 0;
+			margin: 0 0 20px;
+			}
+
+
+
+
