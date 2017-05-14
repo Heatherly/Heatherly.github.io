@@ -1,650 +1,123 @@
+/*My styling modifications to a Bootswatch theme "United"*/
 
-html {
-  height: 100%;
-  width: 100%;
+html { /*used for "sticky footer" */
+  position: relative;
+  min-height: 100%;
 }
-
 
 body {
-	width: auto;
-  	margin: 0 auto;
-  	padding: 0;
-	background-image: url("../images/texturetastic_gray.png");
+	background-image: url(../images/cream_pixels.png);
 	background-repeat: repeat;
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 100%;
-	color: #777777;
-	line-height: 1;
-	}
-
-
-/*GLOABAL TEXT STYLING */
-h1 {
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-	font-size: 26px;
-	font-weight: bold;
-	margin: 15px;
-	}
-
-h2 {
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-	font-size: 16pt;
-	color: #4aaaa5;
-	font-weight: bold;
-	padding: 10px;
-	}
-
-p, li {
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-	line-height: 1.5;
-	font-size: 16px;
-	color: #777777;
-	margin-top: 10px;
-	}
-
-
-/*HEADING AREA*/
-/* I needed to place the styling for #head before .topWrapper, because the class topWrapper was overwriting the #name's styling! */
-
-#name {   /*This is the where my name is at the top of each page*/
-	background-color: #4aaaa5;
-	padding: 15px;
-	width: 220px;
-	float: left;
-	text-align: center;
-	color: #ffffff;
-	}
-
-.topWrapper {
-	background-color: #ffffff;
-	overflow: auto;
-	margin: 0 auto;
-	padding: 0;
-	}
-
-.content {
-	width: 960px;
-	}
-
-
-#topHeader{   /*sets the container width for #name so that it is inline with .content below */
-	background-color: #ffffff;
-	overflow: auto;
-	margin: 0 auto;
-
-	}
-
-/*Navigation area styling*/
-nav {
-	float: right;
-	margin-top: 15px;
-	display: block;
-	vertical-align: baseline;
-	}
-
-ul {
-	display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
-	}
-
-li {
-    display: inline;
-    padding: 10px;
-    list-style: none;
-    }
-  
-li a {
-    text-decoration: none;
-    color: #777777;
-    }
-
-.topBorder {
-	border: 1px solid #cccccc;
-	margin: 0 auto;
-	}
-
-/*PAGE CONTENT*/
-#main-content {
-	clear: both;
-	margin: 30px auto 130px; /*added large bottom marging to help with "sticky" footer not overlapping on long page content*/
-	overflow: auto;
-	min-height: 100%;
-	}
-
-#main-content h1 {
-	color: #4aaaa5;
-	padding-bottom: 20px;
-	border-bottom: 3px solid #cccccc;
-	margin: 20px 0;
-	}
-
-/*MAIN SECTION AREA*/
-#contactMe {
-	width: 588px;
-	float: left;
-	background-color: #ffffff;
-	padding: 30px;
-	border: 1px solid #cccccc;
-	}
-
-/*About Me and image styling*/
-
-#aboutMe {
-	width: 588px;
-	float: left;
-	background-color: #ffffff;
-	padding: 30px;
-	border: 1px solid #cccccc;
-	}
-
-.profilePic {
-	float: left;
-	margin: 0 20px 10px 0px;
-	border: 1px solid #cccccc;
-	width: 200px;
-	}
-
-/*My Portfolio image and banner styling*/
-
-#myPortfolio {
-	width: 588px;
-	float: left;
-	background-color: #ffffff;
-	padding: 30px;
-	border: 1px solid #cccccc;
-	overflow: auto;
-	}
-
-.picLeft {
-	position: relative;
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	background-color: transparent;
+	  /* Margin bottom by footer height  (plus a little top margin spacing) */
+  	margin-bottom: 100px;
 }
 
-.picRight {
-	position: relative;
-	float: right;
-	margin-bottom: 20px;
+.navbar { /*removing top rounded corner*/
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+
+/* JUMBOTRON STYLING */
+}
+.container .jumbotron {
+	padding-right: 10px;
+	padding-top: 80px;
+}
+
+.jumbotron {
+	background-image: url(https://unsplash.it/1400/600?image=893);
+	background-position: top;
+	background-size: cover;
+	background-color: #333;
+	height: 200px;
+	text-align: right;
+}
+
+.jumbotron-heading {
+	font-size: 26px;
+	font-style: bold;
+	letter-spacing: 2.5px;
+	color: #f5f5f5;
+	background-color: #333;
+	line-height: 1.5;
+	padding: 10px;
+}
+
+/* MAIN CONTENT STYLING */
+
+.main-content {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 6px;
+}
+
+.page-header {
+	margin: -20px 0 20px ;
+}
+
+p:after {
+	margin-bottom: 50px;
+}
+
+.gap-right {
+  margin-right: 10px; 
+}
+
+.relative {
+		position: relative;
+		display: inline-block;
+}
+
+.portfolioPic {
+	margin: 0 auto 20px;
 }
 
 .portfolioBanner {
 	position: absolute;
-	right: 0px;
-	bottom: 10px;
-	width: 270px;
-	background-color: #4aaaa5;
+	bottom: 40px;
+	height: 40px;
+	width: 100%;
+	padding: 8px;
+	background-color: #735;
 	text-align: center;
-	padding: 0px;
 	}
 
-.portfolioBanner h3, h3 a {
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-	font-size: 16pt;
+.portfolioBanner a {
 	color: #ffffff;
-	font-weight: normal;
-	padding: 20px;
-	margin: 0 10px;
-
-	text-decoration: none;
-		font-weight: bold;
-	}
-
-/*Contact Me form styling*/
-
-input, textarea {
-    width: 100%;
-    padding: 10px 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    color: #ccc;
-    font-size: 14px;
+	font-size: 16px;
 }
 
-#submitBtn {
-	background-color: #4aaaa5;
-	padding: 10px;
-	width: 100px;
-	text-align: center;
-	color: #ffffff;
-	font-size: 18px;
-	border: none;
-	cursor: pointer;
-	}
+/*ASIDE/PANEL STYLING*/
 
-/* ASIDE SECTION AREA*/
-aside {
-	float: right;
-	width: 218px;
-	padding: 25px;
-	margin: 0px;
-	background-color: #ffffff;
-	border: 1px solid #cccccc;
-}
-
-aside h2 {
-	color: #4aaaa5;
-	padding: 10px 10px 20px 10px;
-	border-bottom: 1px solid #cccccc;
-	margin: 10px 0 20px 0;
-}
 .icon {
 	width: 60px;
 	border-radius: 5px;
 }
 
-/*Equidistance object styling found on CSS-Tricks.com*/
-	
-#iconContainer {
-  height: 60px;
-  text-align: justify;
-  min-width: 100px;
-}
-
-#iconContainer div {
-  height: 25px;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-#iconContainer:after {
-  content: '';
-  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-  display: inline-block;
-}
-
-
-/*FOOTER AREA*/
-footer {
-  	width: 100%;
-  	background-color: #666666;
-  	height: 95px;
-  	position: fixed;
+/* FOOTER STYLING */
+.footer {
+	position: absolute;
   	bottom: 0;
-  	margin-top: 20px;
-  	border-top: 5px solid #4aaaa5;
-  	text-align: center;
-  	z-index: 1;
+  	width: 100%;
+  	height: 60px;
+	background-color: #f5f5f5;
+	padding: 20px 0;
+	text-align: center;
+	border-top: 1px solid #dddddd;
+	border-radius: 6px;
+}
+
+/* Media Query styling to fix profile picture alignment/size issue on smaller screens */
+
+@media (max-width: 360px) {
+	.pull-left {
+	float: none !important;
+	margin-bottom: 10px;
+	width: 100%;
 	}
 
-#footerText{
-  	color: #cccccc;
-  	font-size: 12px;
-  	padding: 20px;
+	.gap-right {
+	margin-right: 0;
 	}
-
-
-/*////////////////////*RESPONSIVE DESIGN ELEMENTS//////////////////////////// */
-
-@media screen and (max-width: 640px) {
-
-/*HEADING AREA*/
-/* I needed to place the styling for #head before .topWrapper, because the class topWrapper was overwriting the #name's styling! */
-		body {
-			width: auto;
-			}
-
-		#name {   /*This is the where my name is at the top of each page*/
-			padding: 15px;
-			width: inherit;
-			float: none;
-			}
-
-		.topWrapper {
-			overflow: auto;
-			margin: 0 auto;
-			padding: 0;
-			}
-
-		.content {
-			width: 100%;
-		}
-
-		#topHeader{   /*sets the container width for #name so that it is inline with .content below */
-			overflow: auto;
-			margin: 0 auto;
-			width: auto;
-			}
-
-		/*Navigation area styling*/
-		nav {
-			float: none;
-			width: 100%;
-			margin: 10px auto;
-			}
-
-		ul {
-		    margin: 0;
-		    display: flex;
-		    justify-content: space-around;
-		    padding: 0 10px;
-		    }
-
-		li {
-		    display: inline;
-		    list-style: none;
-		    padding: 0;
-		    }
-
-		/*PAGE CONTENT*/
-
-		#main-content {
-			clear: both;
-			margin: 10px auto 60px;
-			overflow: auto;
-			}
-
-		#main-content h1 {
-			margin: 0 0 10px;
-			}
-
-
-		/*MAIN SECTION AREA*/
-
-		/*About Me and image styling*/
-
-		#aboutMe {
-			width: auto;
-			margin: 20px;
-			float: none;
-			}
-
-		.profilePic {
-			float: none;
-			align-items: center;
-			width: 100%;
-			margin: 20px 0 0;
-			}
-
-		/*My Portfolio image and banner styling*/
-
-		#myPortfolio {
-			width: auto;
-			float: none;
-			margin: 20px;
-			}
-
-		.picLeft, .picRight {
-			position: relative;
-			float: left;
-			width: 100%;
-			margin: 20px 0;
-		}
-		
-		#myPortfolio img {
-			width: 100%;
-		}
-		.portfolioBanner {
-			width: inherit;
-			}
-
-
-		/*Contact Me form styling*/
-
-		#contactMe {
-			width: auto;
-			float: none;
-			margin: 20px;
-			}
-
-
-		/* ASIDE SECTION AREA*/
-		aside {
-			float: none;
-			width: auto;
-			margin: 20px;
-			}
-
-		aside h2 {
-			padding: 0px 10px 20px 0;
-			margin: 0 0 20px;
-			}
-
-		.icon {
-			margin: 0 10px 0 0;
-			}
-
-		#iconContainer {
-			text-align: left;
-			}
-
-
-		/*FOOTER AREA*/
-		footer {
-		  	height: 45px;
-		  	text-align: center;
-		  	z-index: 1;
-			}
-
-		#footerText{
-		  	font-size: 12px;
-		  	padding: 5px;
-			}
-
-		}
-
-@media screen and (min-width: 641px) and (max-width: 768px) {
-
-		/*HEADING AREA*/
-
-		body {
-			width: auto;
-			}
-
-		#name {   /*This is the where my name is at the top of each page*/
-			padding: 15px;
-			width: auto;
-			float: left;
-			}
-
-		.content {
-			width: 100%;
-		}
-
-		.topWrapper {
-			overflow: auto;
-			margin: 0 auto;
-			padding: 0 20px;
-			width: auto;
-			}
-
-		#topHeader{   /*sets the container width for #name so that it is inline with .content below */
-			overflow: auto;
-			margin: 0 auto;
-			}
-
-		/*PAGE CONTENT*/
-
-		#main-content {
-			clear: both;
-			margin: 10px auto 80px;
-			overflow: auto;
-			}
-
-		#main-content h1 {
-			margin: 0 0 10px;
-			}
-
-		/*MAIN SECTION AREA*/
-
-		/*About Me and image styling*/
-
-		#aboutMe {
-			width: auto;
-			float: none;
-			margin: 20px;
-			}
-
-		/*My Portfolio image and banner styling*/
-
-		#myPortfolio {
-			width: auto;
-			float: none;
-			margin: 20px;
-			}
-
-		.picLeft, .picRight {
-			position: relative;
-			width: 48%;
-			margin: 20px 0;
-		}
-		
-		#myPortfolio img {
-			width: 100%;
-		}
-		.portfolioBanner {
-			width: 100%;
-			}
-
-
-		/*Contact Me form styling*/
-
-		#contactMe {
-			width: auto;
-			float: none;
-			margin:20px;
-			}
-
-
-		/* ASIDE SECTION AREA*/
-		aside {
-			float: none;
-			width: auto;
-			margin: 20px;
-			}
-
-		aside h2 {
-			padding: 0px 10px 20px 0;
-			margin: 0 0 20px;
-			}
-
-		.icon {
-			margin: 0 10px 0 0;
-			}
-
-		#iconContainer {
-			text-align: left;
-			}
-
-
-		/*FOOTER AREA*/
-		footer {
-		  	height: 63px;
-		  	text-align: center;
-		  	z-index: 1;
-			}
-
-		#footerText{
-		  	font-size: 12px;
-		  	padding: 5px;
-			}
-
-		}
-
-
-@media screen and (min-width: 769px) and (max-width: 980px) {
-
-		/*HEADING AREA*/
-
-		body {
-			width: auto;
-			}
-
-		#name {   /*This is the where my name is at the top of each page*/
-			padding: 25px;
-			width: auto;
-			float: left;
-			}
-
-		.content {
-			width: 740px;
-		}
-
-		.topWrapper {
-			overflow: auto;
-			margin: 0 auto;
-			padding: 0;
-			width: 100%;
-			}
-
-		#topHeader{   /*sets the container width for #name so that it is inline with .content below */
-			overflow: auto;
-			margin: 0 auto;
-			}
-
-		/*PAGE CONTENT*/
-
-		#main-content {
-			clear:both;
-			margin: 20px auto 120px;
-			overflow: auto;
-			min-height: 100%;
-			}
-
-		.content h1 {
-			margin: 0 0 10px;
-			}
-
-		/*MAIN SECTION AREA*/
-
-		/*About Me and image styling*/
-
-		#aboutMe {
-			width: 400px;
-			}
-
-		.profilePic {
-			float: none;
-			clear:both;
-			align-items: center;
-			width: 100%;
-			margin: 10px auto;
-			}
-	
-		/*My Portfolio image and banner styling*/
-
-		#myPortfolio {
-			width: 400px;
-			}
-
-		.picLeft, .picRight {
-			float: none;
-			width: 100%;
-			margin: 20px 0;
-		}
-		
-		#myPortfolio img {
-			width: 100%;
-		}
-		.portfolioBanner {
-			width: 100%;
-			}
-
-
-		/*Contact Me form styling*/
-
-		#contactMe {
-			width: 400px;
-			}
-
-
-		/* ASIDE SECTION AREA*/
-		aside {
-			float: right;
-			width: auto;
-			margin: 0 auto;
-			}
-
-		aside h2 {
-			padding: 0px 10px 20px 0;
-			margin: 0 0 20px;
-			}
-
-
-
+}
 

@@ -1,69 +1,113 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Heather Sosa</title>
 
-	<title>Heather Sosa - Portfolio Website</title>
-</head>
-<body>
-<div class="topWrapper">
-<!--Headline -->
-	<div id="topHeader" class="content"> 
-		<header>
-			<div id="name">
-				<h1>Heather Sosa</h1>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<!-- United Theme from Bootswatch -->
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- My additional styling to the Bootswatch theme -->
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  </head>
+ <body>
+
+<!--   NAVIGATION BAR -->
+
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Heather Sosa</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">About Me</a>
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li><a href="contact.html">Contact Me</a>
+                    </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+<!-- JUMBOTRON IMAGE -->
+
+	<div class="container">
+			<div class="jumbotron img-responsive">
+			<span class="jumbotron-heading">Designer. Developer. Dedicated Mom.</span>
 			</div>
-		</header>
 
-	<!-- Navigation -->
-		<nav>
-			
-			<ul>
-			<li><a href="index.html">About</a></li>
-			<li>&#124;</li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li>&#124;</li>
-			<li><a href="contact.html">Contact</a></li>
-			</ul>
-			
-		</nav>	
-	</div>
-</div>
-
-<div class="topBorder"></div>
- <!-- Section 1: About Me -->
- <div class="content" id="main-content">
-	 <section id="aboutMe">
-	 	<h1>About Me</h1>
-	 	<img src="assets/images/HeatherSelfie.JPG" class="profilePic" alt="Heather Sosa">
-
-	 	<p>Hi there! I'm Heather and I am a Denver-based web designer and a graphic designer with six years of experience. Currently, I am studying, through my alma mater University of Denver, to become a Full Stack Web Developer. My program is set to complete in October 2017. I will be seeking full-time employment at the end of my coding bootcamp in Web Development, with a little design thrown in on the side. My professional background includes six years experience in web design, graphic design and marketing communications.</p>
-
-	 	<p>When I'm not up to my elbows in code or Photoshop, I enjoy spending time with my two daughters and my silly husband exploring the Denver-area.</p>
-
-	 </section>
-
-	<!-- Right asside with contact info and social links -->
-	<aside>
-		<h2>Connect with Me</h2>
-		<div id="iconContainer">
-			<div><a href="http://www.github.com/Heatherly" target="_blank"><img src="assets/images/github.png" alt="Heatherly on GitHub" class="icon"></a></div>
-			
-			<div><a href="https://www.linkedin.com/in/heathersosa" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" class="icon"></a></div>
-		
-			<div><a href="http://stackoverflow.com/users/7716484/heatherly" target="_blank"><img src="assets/images/stackoverflow.png" alt="Heatherly on StackOverflow" class="icon"></a></div>
+<!-- MAIN CONTENT AREA -->
+	<section class="main-content">
+		<div class="row">
+			<div class="col-s-12 col-md-8">	
+				<div class="page-header">
+				<h1>About Me</h1>
+				</div>
+			</div>
 		</div>
-	</aside>
-</div>
+		<div class="row">
+			<div class="col-s-12 col-md-8">
+			 	<img class="pull-left gap-right img-rounded img-responsive" src="assets/images/HeatherSelfie.JPG"  alt="Heather Sosa">
+			 	<p><strong>Hi there! I'm Heather</strong> and I am a Denver-based web designer and a graphic designer with six years of experience. Currently, I am studying, through my alma mater University of Denver, to become a Full Stack Web Developer. My program is set to complete in October 2017. I will be seeking full-time employment at the end of my coding boot camp in Web Development, with a little design thrown in on the side. My professional background includes six years experience in web design, graphic design and marketing communications.</p>
+				<p>When I'm not up to my elbows in code or Photoshop, I enjoy spending time with my two daughters and my silly husband exploring the Denver-area.</p>
+			</div>
+			
+<!--ASIDE AREA FOR SOCIAL ICONS -->
+			<div class="col-s-12 col-md-4">
+				<aside>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					<h3 class="panel-title">Connect with Me</h3>
+					</div>
+						<div class="panel-body"><div class="row text-center">
+							<div class="col-xs-4 col-s-4 col-md-4">
+								<a href="http://www.linkedin.com/in/heathersosa" target="_blank"><img src="assets/images/linkedin.png" class="icon" alt="LinkedIn"></a>
+								</div>
+								<div class="col-xs-4 col-s-4 col-md-4">
+								<a href="https://github.com/Heatherly" target="_blank"><img src="assets/images/github.png" class="icon" alt="GitHub"></a>
+								</div>
+								<div class="col-xs-4 col-s-4 col-md-4">
+								<a href="http://stackoverflow.com/users/7716484/heatherly" target="_blank"><img src="assets/images/stackoverflow.png" class="icon" alt="StackOverflow"></a>
+								</div>
+							</div>
+						</div>
+				</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+	</div> <!--ending .container div -->
+	
+<!-- FOOTER -->
+
+	<footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; 2017 Heather Sosa</p>
+      </div>
+    </footer>
 
 
-<!-- Footer -->
-<footer>
-	<p id="footerText">&copy;2017 Heather Sosa</p>
 
-</footer>
 </body>
 </html>
