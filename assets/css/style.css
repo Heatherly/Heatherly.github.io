@@ -12,6 +12,10 @@ body {
 	  /* Margin bottom by footer height  (plus a little top margin spacing) */
   	margin-bottom: 100px;
 }
+ul {
+    list-style-position: inside;
+    padding-left:0;
+}
 
 .navbar { /*removing top rounded corner*/
 	border-top-left-radius: 0px;
